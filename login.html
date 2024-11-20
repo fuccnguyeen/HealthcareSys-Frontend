@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+     background: linear-gradient(to right, #ffffff, #e6ffe6); /* Hiệu ứng nền chuyển từ trắng sang xanh nhạt */
+     box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2); /* Shadow màu xanh lá */
+   }
+ </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased flex items-center justify-center min-h-screen">
+
+  <!-- Login Form Container -->
+  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold text-center text-green-600 mb-6">Login</h2>
+    
+    <!-- Form -->
+    <form action="#" method="POST" class="space-y-6">
+      
+      <!-- Username Field -->
+      <div>
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input type="text" id="username" name="username" required
+               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+      </div>
+
+      <!-- Password Field -->
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" required
+               class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit"
+                class="w-full py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+          Login
+        </button>
+      </div>
+    </form>
+
+    <!-- Additional Links -->
+    <div class="mt-4 text-center">
+      <a href="#" class="text-sm text-gray-600 hover:text-green-500">Forgot?</a>
+    </div>
+  </div>
+
+</body>
+</html>
